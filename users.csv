@@ -1,0 +1,21 @@
+user_id,first_name,last_name,email,phone,subscription_tier,trial_end_date,top_channels,top_artists
+USR001,Phone,Known,phone.known@test.com,+15550010001,trial,2026-04-10,Hits1|BPM|Diplo,Drake|Doja Cat|Future
+USR002,Email,Only,email.only@test.com,,trial,2026-04-15,CountryRoads|OutlawCountry,Morgan Wallen|Luke Combs|Zach Bryan
+USR003,Unknown,Caller,unknown.caller@test.com,,select,,AltNation|LiquidMetal|Octane,Foo Fighters|Metallica|Tool
+USR004,Phone,Unknown,phone.unknown@test.com,+15550010099,premier,,HowardStern|POTUS|CNN,Howard Stern
+USR005,Select,Subscriber,select.subscriber@test.com,+15550010005,select,,Hits1|PopRocks|Venus,Taylor Swift|Olivia Rodrigo
+USR006,All,Access,all.access@test.com,+15550010006,trial,2026-04-01,Premier1|Jazz|ClassicVinyl,Miles Davis|John Coltrane
+USR007,Expired,Trialer,expired.trialer@test.com,+15550010007,expired,2026-03-01,BPM|Diplo|Chill,Calvin Harris|Diplo
+USR008,Hip,Hop,hip.hop@test.com,+15550010008,trial,2026-04-20,Hits1|BPM|RapCaviar,Drake|Kendrick Lamar|21 Savage
+USR009,Talk,Radio,talk.radio@test.com,+15550010009,select,,POTUS|CNN|FoxNews|SiriusXMPatriot,Rachel Maddow|Sean Hannity
+USR010,Country,Devotee,country.devotee@test.com,+15550010010,trial,2026-04-08,CountryRoads|OutlawCountry|TheHighway,Morgan Wallen|Luke Combs
+USR011,Balanced,Listener,balanced.listener@test.com,+15550010011,premier,,Hits1|CountryRoads|Jazz|POTUS,Taylor Swift|Morgan Wallen
+USR012,Live,Event,live.event@test.com,+15550010012,trial,2026-04-12,Diplo|BPM|Hits1,Diplo|Drake
+USR013,On,Demand,on.demand@test.com,+15550010013,trial,2026-04-18,OutlawCountry|CountryRoads,Zach Bryan|Morgan Wallen
+USR014,Both,Available,both.available@test.com,+15550010014,trial,2026-04-05,Hits1|BPM,Drake|Future
+USR015,No,Content,no.content@test.com,+15550010015,trial,2026-04-22,ClassicVinyl|Jazz,Miles Davis
+USR016,Trial,Ends,trial.ends@test.com,+15550010016,trial,2026-03-28,Hits1|BPM|Diplo,Drake|Doja Cat
+USR017,Budget,Conscious,budget.conscious@test.com,+15550010017,select,,Hits1|Premier1,Taylor Swift
+USR018,Feature,Seeker,feature.seeker@test.com,+15550010018,select,,HowardStern|Premier1,Howard Stern
+USR019,Happy,Cancel,happy.cancel@test.com,+15550010019,trial,2026-04-01,Hits1,Taylor Swift
+USR020,Select,Upgrade,select.upgrade@test.com,+15550010020,select,,HowardStern|BPM|Hits1,Howard Stern|Drake
