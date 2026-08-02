@@ -1,0 +1,12 @@
+{
+  "request_id": "green-day-test-001",
+  "artist_name": "Green Day",
+  "channel_names": [
+    "Lithium",
+    "Alt Nation"
+  ],
+  "start_date": "2026-05-01",
+  "end_date": "2026-08-01",
+  "max_day_bucket": 91,
+  "output_table": "sandbox_prod.bdsilva.artist_channel_results"
+}
