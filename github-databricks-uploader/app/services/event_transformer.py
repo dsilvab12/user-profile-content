@@ -11,14 +11,16 @@ OUTPUT_TABLE_PREFIX = "sandbox_prod.bdsilva"
 class EventTransformer:
     def transform(self, payload: GuestListEventRequest) -> DatabricksAudienceRequest:
         event_date = _as_utc(payload.event_date)
+        end_date = event_date.date()
+        start_date = end_date - timedelta(days=MAX_DAY_BUCKET)
         artist_table_name = normalize_artist_name(payload.artist.name)
 
         return DatabricksAudienceRequest(
             request_id=payload.event_id,
             artist_name=payload.artist.name,
             channel_names=[payload.channel.name],
-            start_date=event_date.date().isoformat(),
-            end_date=(event_date - timedelta(days=MAX_DAY_BUCKET)).date().isoformat(),
+            start_date=start_date.isoformat(),
+            end_date=end_date.isoformat(),
             max_day_bucket=MAX_DAY_BUCKET,
             output_table=f"{OUTPUT_TABLE_PREFIX}.{artist_table_name}_channel_results",
         )
@@ -36,4 +38,3 @@ def _as_utc(value: datetime) -> datetime:
     if value.tzinfo is None:
         return value.replace(tzinfo=timezone.utc)
     return value.astimezone(timezone.utc)
-

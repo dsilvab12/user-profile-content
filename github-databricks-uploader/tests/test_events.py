@@ -117,11 +117,12 @@ def test_valid_event_uploads_transformed_audience_request() -> None:
             "request_id": "guest-list-2026-08-07-green-day",
             "artist_name": "Green Day",
             "channel_names": ["Lithium"],
-            "start_date": "2026-08-05",
-            "end_date": "2026-05-06",
+            "start_date": "2026-05-06",
+            "end_date": "2026-08-05",
             "max_day_bucket": 91,
             "output_table": "sandbox_prod.bdsilva.green_day_channel_results",
         }
+        assert transformed["start_date"] < transformed["end_date"]
         assert response.bytes_uploaded == len(upload_call["content"])
 
     asyncio.run(run())
